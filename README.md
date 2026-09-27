@@ -6,7 +6,7 @@ The latest client-facing summary is available in [`CLIENT_HANDOVER.md`](CLIENT_H
 
 ## Current website structure
 
-The page opens with the company introduction, followed by the **Get a closer look** gallery. The seven-package register appears next, with PDF-sourced casket photos, a **Grave fee included** label on every plan, and detailed on-screen overlays with package-specific grocery lists and matching grocery visuals. The page then presents contact information and ends with the confirmed trading hours in the footer.
+The page opens with the company introduction, followed by the **Get a closer look** gallery. The seven-package register appears next, with a **Grave fee included** label on every plan. Only the Premium, Presidential, and Royal overlays show the PDF casket photos, with transparent backgrounds; all seven overlays include plan-specific grocery lists and matching grocery visuals. The page then presents contact information and ends with the confirmed trading hours in the footer.
 
 The service-image section includes synchronized slideshows for Classy caskets, Cars with care, Cemetery decor, Flower sprays, and Branded refreshments. Each slideshow uses a 4.5-second interval and a 0.9-second crossfade. Images are preloaded and decoded before the shared slideshow scheduler begins.
 

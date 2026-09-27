@@ -20,7 +20,7 @@ Immediately below the homepage, the **Get a closer look** section presents six s
 
 The Packages section displays all seven confirmed options: **Premium at R285, Presidential at R325, Royal at R355, Plan A at R135, Plan B at R155, Plan C at R165, and Plan D at R185**. Every card includes a **View package** button and states **Grave fee included**.
 
-Selecting a package opens an on-screen details panel rather than sending the visitor away from the page. The panel presents a casket photo from the supplied PDF, that plan’s included coffin or casket, member cover, waiting period, grave-fee inclusion, service items, plan allowance, and grocery allocation. A matching illustrative grocery photo appears alongside the full grocery list. A close button returns the visitor to the package register. The panel also provides direct WhatsApp and telephone enquiry actions.
+Selecting a package opens an on-screen details panel rather than sending the visitor away from the page. Only the **Premium, Presidential, and Royal** panels show casket photos from the supplied PDF, now on transparent backgrounds; Plans A–D have no casket photo. Every panel presents the plan’s included coffin or casket, member cover, waiting period, grave-fee inclusion, service items, plan allowance, and grocery allocation. A matching illustrative grocery photo appears alongside the full grocery list. A close button returns the visitor to the package register. The panel also provides direct WhatsApp and telephone enquiry actions.
 
 The supplied PDF contains four casket photographs but no grocery text. Exact grocery lists are therefore retained from the existing package records, with the website clearly labeling the new grocery photos as illustrative.
 
