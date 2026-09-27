@@ -90,6 +90,12 @@ const plans = [
   { name: "Plan D", price: "R185", coffin: "Open face casket", allowance: "Vegetables and tableware included", graveFee: "Included", groceryImage: "assets/package-groceries/vegetables-tableware.webp", groceryImageAlt: "Vegetables, paper cups and plates included with Plan D", cover: "Funeral service package", waiting: "6 months", description: "Open face casket with the larger 7 × 10 tent and the funeral-service inclusions listed in the supplied package PDF.", serviceItems: ["Hearse and family cars", "7 × 10 tent", "2 tables", "40 chairs and toilet", "Gas stove with 3 pots", "5 taxis", "Vegetables", "Paper cups and plates"], groceries: ["Vegetables", "Paper cups and plates"], eyebrow: "Open face casket" },
 ];
 
+const flowerSprays = [
+  { image: "assets/package-carousel/kgotso-flower-1.jpg", alt: "White lilies and roses arranged as a funeral flower spray" },
+  { image: "assets/package-carousel/kgotso-flower-2.jpg", alt: "White and blush flowers arranged as a funeral spray" },
+  { image: "assets/package-carousel/kgotso-flower-3.jpg", alt: "White lilies and plum roses arranged as a funeral spray" },
+];
+
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
 const GALLERY_INTERVAL_MS = 4500;
@@ -172,7 +178,7 @@ function renderPlan(index) {
   $("#overlay-plan-gravefee").textContent = plan.graveFee;
   const casketImage = $("#overlay-plan-casket");
   casketImage.hidden = !plan.casketImage;
-  casketImage.closest(".plan-sheet-header").classList.toggle("has-casket", Boolean(plan.casketImage));
+  casketImage.closest(".plan-sheet-header").classList.toggle("has-visuals", Boolean(plan.groceryImage));
   if (plan.casketImage) {
     casketImage.src = plan.casketImage;
     casketImage.alt = plan.casketAlt;
@@ -180,6 +186,13 @@ function renderPlan(index) {
     casketImage.removeAttribute("src");
     casketImage.alt = "";
   }
+  const groceryVisual = $("#overlay-plan-grocery-visual");
+  groceryVisual.src = plan.groceryImage;
+  groceryVisual.alt = plan.groceryImageAlt;
+  const flowerSpray = flowerSprays[index % flowerSprays.length];
+  const flowerVisual = $("#overlay-plan-flower-visual");
+  flowerVisual.src = flowerSpray.image;
+  flowerVisual.alt = flowerSpray.alt;
   $("#overlay-service-heading").textContent = plan.serviceItems.length ? "Included service items" : "Service items";
   $("#overlay-grocery-title").textContent = `Groceries included with ${plan.name}.`;
   $("#overlay-grocery-image").src = plan.groceryImage;

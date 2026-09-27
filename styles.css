@@ -153,8 +153,11 @@ h3 { font-size: clamp(2.5rem, 4vw, 4.5rem); }
 .plan-close { position: absolute; z-index: 2; top: 1rem; right: 1rem; display: grid; place-items: center; width: 2.6rem; height: 2.6rem; border: 1px solid rgba(255,255,255,.35); border-radius: 50%; background: rgba(255,255,255,.1); color: #fff; font-size: 1.6rem; line-height: 1; cursor: pointer; transition: background .2s, transform .2s; }
 .plan-close:hover { background: rgba(255,255,255,.22); transform: rotate(6deg); }
 .plan-sheet-header { display: grid; grid-template-columns: 1fr; align-items: center; gap: 2rem; padding: clamp(2rem, 5vw, 4rem); padding-right: 5rem; background: linear-gradient(145deg, var(--navy), #292f78); color: #fff; }
-.plan-sheet-header.has-casket { grid-template-columns: minmax(0, 1fr) minmax(14rem, .72fr); }
-.plan-sheet-casket { display: block; width: 100%; max-height: 14rem; border-radius: .15rem; background: transparent; object-fit: contain; }
+.plan-sheet-header.has-visuals { grid-template-columns: minmax(0, 1fr) minmax(14rem, .72fr); }
+.plan-sheet-visuals { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: center; gap: .6rem; min-width: 0; }
+.plan-sheet-visuals img { display: block; width: 100%; height: 7.25rem; border-radius: .15rem; object-fit: cover; }
+.plan-sheet-visuals img[hidden] { display: none; }
+.plan-sheet-visuals .plan-sheet-casket { grid-column: 1 / -1; height: 10.5rem; max-height: 10.5rem; background: transparent; object-fit: contain; }
 .plan-sheet-header .eyebrow, .plan-sheet-column > .eyebrow { color: var(--gold-light); }
 .plan-sheet-header h3 { margin-bottom: .2rem; color: #fff; font-size: clamp(2.8rem, 6vw, 5.6rem); }
 .plan-sheet-price { margin-bottom: 1rem; color: var(--gold-light); font: 600 2.6rem var(--serif); }
@@ -366,8 +369,9 @@ details p { max-width: 45rem; margin: 0 3rem 1.5rem 0; color: var(--muted); font
   .plan-overlay { padding: .5rem; }
   .plan-sheet { max-height: calc(100vh - 1rem); }
   .plan-sheet-header { grid-template-columns: 1fr; gap: 1rem; padding-right: 4rem; }
-  .plan-sheet-header.has-casket { grid-template-columns: 1fr; }
-  .plan-sheet-casket { max-height: 11rem; }
+  .plan-sheet-header.has-visuals { grid-template-columns: 1fr; }
+  .plan-sheet-visuals img { height: 6rem; }
+  .plan-sheet-visuals .plan-sheet-casket { height: 8rem; max-height: 8rem; }
   .plan-sheet-grid { grid-template-columns: 1fr; }
   .plan-sheet-grocery-content { grid-template-columns: minmax(5.5rem, .7fr) minmax(0, 1.3fr); gap: .75rem; }
   .plan-sheet-column + .plan-sheet-column { border-top: 1px solid rgba(255,255,255,.16); border-left: 0; }
