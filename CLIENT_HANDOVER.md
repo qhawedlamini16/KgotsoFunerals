@@ -38,11 +38,11 @@ The website uses the confirmed contact details throughout:
 
 - **Office:** 010 109 6723
 - **WhatsApp:** 071 985 4522
-- **Alternative:** 061 533 6947
+- **Alternative WhatsApp and phone:** 061 533 6947
 - **Email:** kgotsobmfuneralservices@gmail.com
 - **Address:** 1997 Corner Themba Street, Kagiso 2
 
-The Contact section uses compact icon-led buttons for telephone and WhatsApp actions. It also includes map, email, Facebook, TikTok, and WhatsApp links. The confirmed trading hours now appear in the footer:
+The Contact section uses compact icon-led actions for both WhatsApp numbers, plus telephone options for the office and alternative number. Every package overlay also offers WhatsApp to both 071 985 4522 and 061 533 6947. It includes map, email, Facebook, and TikTok links. The confirmed trading hours now appear in the footer:
 
 - **Monday–Friday:** 08:00–16:00
 - **Saturday:** 07:30–13:00

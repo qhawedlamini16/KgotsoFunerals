@@ -228,7 +228,7 @@ details p { max-width: 45rem; margin: 0 3rem 1.5rem 0; color: var(--muted); font
 .contact-heading h2 { color: #fff; }
 .contact-heading > p:not(.eyebrow) { color: rgba(255,255,255,.68); }
 .contact-layout { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(17rem, .7fr); gap: 2rem; align-items: stretch; margin-top: 3rem; max-width: 68rem; }
-.contact-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .55rem; }
+.contact-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .55rem; }
 .contact-card { position: relative; min-height: 5.8rem; padding: 1rem; border: 1px solid rgba(255,255,255,.18); transition: border-color .2s, background .2s, transform .2s; }
 .contact-card:hover { border-color: var(--gold); background: rgba(255,255,255,.05); }
 .contact-card:hover { transform: translateY(-2px); }
