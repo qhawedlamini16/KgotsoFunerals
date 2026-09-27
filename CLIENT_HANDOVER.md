@@ -26,9 +26,9 @@ The supplied PDF contains four casket photographs but no grocery text. Exact gro
 
 ## Service imagery now loads before it is needed
 
-The service presentation includes separate image groups for **Cars with care, Cemetery decor, Flower sprays, and Branded refreshments**. Casket photos are reserved for the Premium, Presidential, and Royal package overlays. The website preloads and decodes the service images before starting the slideshows, which prevents blank cards when visitors reach the section.
+The service presentation includes separate image groups for **Classy caskets, Cars with care, Cemetery decor, Flower sprays, and Branded refreshments**. The Classy Caskets slideshow is restored as a separate service showcase; the PDF casket photos remain reserved for the Premium, Presidential, and Royal package overlays. The website preloads and decodes the service images before starting the slideshows, which prevents blank cards when visitors reach the section.
 
-All four categories use one synchronized timing system. Each image remains visible for **4.5 seconds**, and the next image enters through a **0.9-second crossfade**. Images advance in their defined order. The incoming image becomes visible before the outgoing image is removed, so the card never displays an empty navy frame.
+All five categories use one synchronized timing system. Each image remains visible for **4.5 seconds**, and the next image enters through a **0.9-second crossfade**. Images advance in their defined order. The incoming image becomes visible before the outgoing image is removed, so the card never displays an empty navy frame.
 
 Branded refreshments currently uses three different framed views of the same approved water-bottle photograph. This approach keeps the slideshow active without introducing unrelated imagery. Additional refreshment photographs can replace those views later without changing the slideshow system.
 

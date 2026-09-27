@@ -8,7 +8,7 @@ The latest client-facing summary is available in [`CLIENT_HANDOVER.md`](CLIENT_H
 
 The page opens with the company introduction, followed by the **Get a closer look** gallery. The seven-package register appears next, with a **Grave fee included** label on every plan. All seven package overlays show the plan’s grocery image and a flower spray beside the casket-image area; only Premium, Presidential, and Royal show a PDF casket photo. The overlays also include plan-specific grocery lists. The page then presents contact information and ends with the confirmed trading hours in the footer.
 
-The service-image section includes synchronized slideshows for Cars with care, Cemetery decor, Flower sprays, and Branded refreshments. Each slideshow uses a 4.5-second interval and a 0.9-second crossfade. Images are preloaded and decoded before the shared slideshow scheduler begins.
+The service-image section includes synchronized slideshows for Classy caskets, Cars with care, Cemetery decor, Flower sprays, and Branded refreshments. The separate casket slideshow is restored; PDF casket photos remain on the Premium, Presidential, and Royal overlays only. Each slideshow uses a 4.5-second interval and a 0.9-second crossfade. Images are preloaded and decoded before the shared slideshow scheduler begins.
 
 ## Editing the site
 
