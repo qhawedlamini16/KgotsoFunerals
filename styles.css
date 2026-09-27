@@ -123,9 +123,8 @@ h3 { font-size: clamp(2.5rem, 4vw, 4.5rem); }
 .package-card b { margin-bottom: .55rem; font: 600 2.4rem var(--serif); color: var(--gold); }
 .package-card small { min-height: 2.8rem; color: var(--muted); font-size: .72rem; line-height: 1.35; }
 .package-card.active small { color: rgba(255,255,255,.67); }
-.package-card i { display: inline-flex; align-items: center; gap: .35rem; margin-top: auto; font-size: .58rem; font-style: normal; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-.package-card i em { color: var(--gold); font-size: .9rem; font-style: normal; }
-.package-card.active i em { color: var(--gold-light); }
+.package-card i { display: inline-flex; align-items: center; gap: .45rem; margin-top: auto; font-size: .58rem; font-style: normal; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.package-card i::before { width: .5rem; height: .5rem; flex: 0 0 .5rem; border-radius: 50%; background: #22c55e; box-shadow: 0 0 .5rem rgba(34,197,94,.75); content: ""; animation: package-light-beep 1s steps(1, end) infinite; }
 .plan-detail { display: grid; grid-template-columns: 1fr 1fr 1fr; margin-top: 1rem; background: var(--navy); color: #fff; }
 .plan-detail > div { padding: clamp(2rem, 4vw, 4rem); }
 .plan-detail > div + div { border-left: 1px solid rgba(255,255,255,.16); }
@@ -343,6 +342,7 @@ details p { max-width: 45rem; margin: 0 3rem 1.5rem 0; color: var(--muted); font
 @keyframes gallery-timeline { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 @keyframes gallery-float { from { transform: translateX(0); } to { transform: translateX(calc(-50% - (var(--gallery-gap) / 2))); } }
 @keyframes cta-breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.035); } }
+@keyframes package-light-beep { 0%, 49% { opacity: 1; } 50%, 100% { opacity: .25; box-shadow: none; } }
 
 @media (max-width: 1000px) {
   .gallery-thumbs { grid-template-columns: repeat(7, minmax(6.5rem, 1fr)); overflow-x: auto; padding-bottom: .35rem; }
@@ -371,7 +371,7 @@ details p { max-width: 45rem; margin: 0 3rem 1.5rem 0; color: var(--muted); font
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .gallery-image-wrap img, .gallery-progress::after, .gallery-track, .package-cta { animation: none; }
+  .gallery-image-wrap img, .gallery-progress::after, .gallery-track, .package-cta, .package-card i::before { animation: none; }
   .package-visual-slides img { transition: none; }
   .package-visual img { transition: none; }
 }
