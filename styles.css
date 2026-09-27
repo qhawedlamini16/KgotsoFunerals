@@ -68,6 +68,7 @@ h3 { font-size: clamp(2.5rem, 4vw, 4.5rem); }
 
 .section-heading { margin-bottom: 3.4rem; }
 .section-heading p:not(.eyebrow) { max-width: 34rem; color: var(--muted); }
+.package-image-note { max-width: 42rem; margin: -2.2rem auto 2.3rem; color: var(--muted); font-size: .75rem; text-align: center; }
 .split-heading { display: flex; align-items: end; justify-content: space-between; gap: 3rem; }
 .split-heading > * { flex: 1; }
 .split-heading h2 { margin-bottom: 0; }
@@ -114,14 +115,17 @@ h3 { font-size: clamp(2.5rem, 4vw, 4.5rem); }
 .register-label { display: grid; gap: .35rem; padding-top: .9rem; color: #7b6a5c; font-size: .7rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
 .register-label small { color: var(--muted); font-size: .62rem; font-weight: 400; letter-spacing: .08em; }
 .package-cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .7rem; }
-.package-card { display: flex; min-height: 15rem; flex-direction: column; align-items: flex-start; padding: 1.2rem; border: 1px solid rgba(21,28,87,.17); background: rgba(255,255,255,.22); text-align: left; cursor: pointer; transition: color .25s, background .25s, transform .25s; }
+.package-card { display: flex; min-height: 18rem; flex-direction: column; align-items: flex-start; padding: 1rem; border: 1px solid rgba(21,28,87,.17); background: rgba(255,255,255,.22); text-align: left; cursor: pointer; transition: color .25s, background .25s, transform .25s; }
 .package-card:hover { transform: translateY(-3px); }
 .package-card.active { background: var(--navy); color: #fff; }
-.package-card > span { margin-bottom: 1.6rem; color: #87796e; font-size: .62rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+.package-card-image { width: 100%; height: 5.2rem; margin-bottom: .7rem; border-radius: .15rem; background: #fff; object-fit: contain; }
+.package-card > span { margin-bottom: .4rem; color: #87796e; font-size: .62rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
 .package-card.active > span { color: var(--gold-light); }
 .package-card strong { margin-bottom: .1rem; font: 600 2rem var(--serif); }
-.package-card b { margin-bottom: .55rem; font: 600 2.4rem var(--serif); color: var(--gold); }
-.package-card small { min-height: 2.8rem; color: var(--muted); font-size: .72rem; line-height: 1.35; }
+.package-card b { margin-bottom: .2rem; font: 600 2.4rem var(--serif); color: var(--gold); }
+.package-card small { min-height: 0; color: var(--muted); font-size: .72rem; line-height: 1.35; }
+.package-card .package-card-benefit { margin-bottom: .35rem; color: #3c7551; font-size: .62rem; font-weight: 700; }
+.package-card.active .package-card-benefit { color: #a9efbd; }
 .package-card.active small { color: rgba(255,255,255,.67); }
 .package-card i { display: inline-flex; align-items: center; gap: .45rem; margin-top: auto; font-size: .58rem; font-style: normal; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .package-card i::before { width: .5rem; height: .5rem; flex: 0 0 .5rem; border-radius: 50%; background: #22c55e; box-shadow: 0 0 .5rem rgba(34,197,94,.75); content: ""; animation: package-light-beep 1s steps(1, end) infinite; }
@@ -149,7 +153,8 @@ h3 { font-size: clamp(2.5rem, 4vw, 4.5rem); }
 .plan-sheet { position: relative; z-index: 1; width: min(1080px, 100%); max-height: calc(100vh - 3rem); overflow: auto; background: var(--cream); color: var(--ink); box-shadow: 0 2rem 6rem rgba(4,7,34,.35); animation: plan-sheet-in .25s cubic-bezier(.23,1,.32,1) both; }
 .plan-close { position: absolute; z-index: 2; top: 1rem; right: 1rem; display: grid; place-items: center; width: 2.6rem; height: 2.6rem; border: 1px solid rgba(255,255,255,.35); border-radius: 50%; background: rgba(255,255,255,.1); color: #fff; font-size: 1.6rem; line-height: 1; cursor: pointer; transition: background .2s, transform .2s; }
 .plan-close:hover { background: rgba(255,255,255,.22); transform: rotate(6deg); }
-.plan-sheet-header { padding: clamp(2rem, 5vw, 4rem); padding-right: 5rem; background: linear-gradient(145deg, var(--navy), #292f78); color: #fff; }
+.plan-sheet-header { display: grid; grid-template-columns: minmax(0, 1fr) minmax(14rem, .72fr); align-items: center; gap: 2rem; padding: clamp(2rem, 5vw, 4rem); padding-right: 5rem; background: linear-gradient(145deg, var(--navy), #292f78); color: #fff; }
+.plan-sheet-casket { width: 100%; max-height: 14rem; border-radius: .15rem; background: #fff; object-fit: contain; }
 .plan-sheet-header .eyebrow, .plan-sheet-column > .eyebrow { color: var(--gold-light); }
 .plan-sheet-header h3 { margin-bottom: .2rem; color: #fff; font-size: clamp(2.8rem, 6vw, 5.6rem); }
 .plan-sheet-price { margin-bottom: 1rem; color: var(--gold-light); font: 600 2.6rem var(--serif); }
@@ -167,6 +172,10 @@ h3 { font-size: clamp(2.5rem, 4vw, 4.5rem); }
 .plan-sheet-column + .plan-sheet-column .plan-sheet-list { color: rgba(255,255,255,.75); }
 .plan-sheet-column + .plan-sheet-column .plan-sheet-list li::before { color: var(--gold-light); }
 .plan-sheet-groceries h4 { margin-bottom: 1.4rem; color: #fff; font-size: clamp(1.8rem, 3vw, 2.8rem); }
+.plan-sheet-image-note { margin: -1rem 0 1rem; color: rgba(255,255,255,.62); font-size: .66rem; }
+.plan-sheet-grocery-content { display: grid; grid-template-columns: minmax(7.5rem, .75fr) minmax(0, 1.25fr); align-items: start; gap: 1rem; }
+.plan-sheet-grocery-content > img { width: 100%; aspect-ratio: 4 / 3; border-radius: .15rem; object-fit: cover; }
+.plan-sheet-grocery-content .plan-sheet-list { margin: 0; padding: 0; border: 0; }
 .plan-sheet-actions { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.4rem clamp(1.6rem, 4vw, 3.2rem); background: var(--cream-dark); }
 .plan-sheet-actions p { margin: 0; color: var(--navy); font: 600 1.35rem var(--serif); }
 .plan-sheet-actions > div { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .6rem; }
@@ -293,7 +302,8 @@ details p { max-width: 45rem; margin: 0 3rem 1.5rem 0; color: var(--muted); font
   .approach-art { max-width: none; padding-right: 1.5rem; }
   .art-card { right: 0; bottom: 1rem; }
   .package-cards { grid-template-columns: 1fr 1fr; }
-  .package-card { min-height: 13rem; padding: .9rem; }
+  .package-card { min-height: 17rem; padding: .9rem; }
+  .package-card-image { height: 4.6rem; }
   .package-card strong { font-size: 1.65rem; }
   .package-card b { font-size: 2rem; }
   .package-card > span { margin-bottom: 1rem; font-size: .52rem; }
@@ -355,7 +365,10 @@ details p { max-width: 45rem; margin: 0 3rem 1.5rem 0; color: var(--muted); font
   .gallery-float figure { width: 8.2rem; }
   .plan-overlay { padding: .5rem; }
   .plan-sheet { max-height: calc(100vh - 1rem); }
+  .plan-sheet-header { grid-template-columns: 1fr; gap: 1rem; padding-right: 4rem; }
+  .plan-sheet-casket { max-height: 11rem; }
   .plan-sheet-grid { grid-template-columns: 1fr; }
+  .plan-sheet-grocery-content { grid-template-columns: minmax(5.5rem, .7fr) minmax(0, 1.3fr); gap: .75rem; }
   .plan-sheet-column + .plan-sheet-column { border-top: 1px solid rgba(255,255,255,.16); border-left: 0; }
   .plan-sheet-actions { display: block; }
   .plan-sheet-actions p { margin-bottom: .9rem; }
