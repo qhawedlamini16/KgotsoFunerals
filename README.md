@@ -1,6 +1,6 @@
-# Kgotso BM Funeral Scheme
+# Kgotso BM Funerals Scheme
 
-This repository contains the current static website for **Kgotso BM Funeral Scheme** in Kagiso, Gauteng. The site presents the company’s funeral packages, service imagery, contact channels, location, and operating hours in a responsive single-page experience.
+This repository contains the current static website for **Kgotso BM Funerals Scheme** in Kagiso, Gauteng. The site presents the company’s funeral packages, service imagery, contact channels, location, and operating hours in a responsive single-page experience.
 
 The latest client-facing summary is available in [`CLIENT_HANDOVER.md`](CLIENT_HANDOVER.md). The live website is published through Manus.[1]
 
@@ -37,5 +37,5 @@ The website currently displays **1997 Corner Themba Street, Kagiso 2**. The list
 
 ## References
 
-[1]: https://kgotsobmfune-mf82jqcs.manus.space "Kgotso BM Funeral Scheme live website"
+[1]: https://kgotsobmfune-mf82jqcs.manus.space "Kgotso BM Funerals Scheme live website"
 [2]: https://github.com/qhawedlamini16/KgotsoFunerals "Kgotso Funerals GitHub repository"
