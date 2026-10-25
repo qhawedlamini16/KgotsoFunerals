@@ -1,0 +1,10 @@
+# Keep internal files off the public site
+/README.md              /404.html  404!
+/CLIENT_HANDOVER.md     /404.html  404!
+/bundle-extract.txt     /404.html  404!
+/recovered-reference/*  /404.html  404!
+/scripts/*              /404.html  404!
+/docs/*                 /404.html  404!
+
+# Old image paths (shared links, Google Images) go to the new ones
+/assets/pdf-gallery/page-007.jpg   /icon-512.png  301
