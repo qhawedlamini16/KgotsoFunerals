@@ -58,6 +58,7 @@
 Note: "Kgatso" is the NFMW (National Fund for Municipal Workers) voluntary burial scheme — national authority; compete on "Kgotso BM" + Kagiso + Maps, never mention Kgatso.
 
 ## Change log
+- 2026-10-25 — package summary block removed at operator request (too cluttered); package details live in the panels only.
 - 2026-10-25 — on-page SEO: H1 now carries "Funeral scheme & funeral services in Kagiso"; hero intro names the business; section headings with search phrases; plain-text "All funeral packages at a glance" summary (mirror of app.js — update both); "a month" removed from description (not confirmed).
 - 2026-10-25 — panels: plan coffin photos (supplied by Qhawe) + headstones on top 3; food photos removed from package panels; grocery lists kept as text.
 - 2026-10-25 — branch change/david-oct-updates: package changes, new name, real coffin/headstone/refreshment photos, flowers removed, images 69 MB → 4 MB, favicons, robots/sitemap/canonical/schema, _headers, _redirects (internal files 404), 404 page, privacy notice, old Manus recovered copy removed from published files.
