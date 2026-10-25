@@ -89,19 +89,18 @@ const commonGroceries = [
 ];
 
 const topCover = "Up to 8 members: 4 adults and 4 children";
-const vegImage = "assets/img/site/vegetables-tableware.webp";
-const fullImage = "assets/img/site/full-provisions.webp";
 
-// casketImage: client-supplied PDF photos for the top 3. headstoneImage stays null
-// until Bobo confirms which coffin and headstone belong to each plan.
+// Coffin per plan matched to the brochure wording (25 Oct 2026). Presidential offers
+// an open face or 3 tier coffin; the open face coffin is shown. Headstones only on the
+// top 3 (brochure); which headstone design goes with which plan is still to confirm.
 const plans = [
-  { name: "Premium", price: "R285", coffin: "Flat lid coffin", allowance: "R100 airtime and R100 data", graveFee: "Included", casketImage: "assets/img/site/premium-transparent.webp", casketAlt: "Polished warm-brown casket", headstoneImage: null, groceryImage: fullImage, groceryImageAlt: "Rice, flour, maize meal, cooking oil, vegetables, beef and chicken representing the Premium grocery allocation", cover: topCover, waiting: "6 months", description: "Core funeral support with a headstone, the listed groceries, and R100 airtime and R100 data.", serviceItems, groceries: [...commonGroceries, "10 kg beef stew", "10 kg chicken drumsticks"], eyebrow: "Refined protection" },
-  { name: "Presidential", price: "R325", coffin: "Open face coffin or 3 tier coffin", allowance: "R150 airtime and R150 data", graveFee: "Included", casketImage: "assets/img/site/presidential-transparent.webp", casketAlt: "Ornate brown casket", headstoneImage: null, groceryImage: fullImage, groceryImageAlt: "Rice, flour, maize meal, cooking oil, vegetables, beef and chicken representing the Presidential grocery allocation", cover: topCover, waiting: "6 months", description: "A distinguished package with a headstone, expanded groceries, and R150 airtime and R150 data.", serviceItems, groceries: [...commonGroceries, "15 kg beef stew", "15 kg chicken drumsticks"], eyebrow: "Distinguished assurance" },
-  { name: "Royal", price: "R355", coffin: "Open face casket", allowance: "R200 airtime and R200 data", graveFee: "Included", casketImage: "assets/img/site/royal-transparent.webp", casketAlt: "Carved brown casket", headstoneImage: null, groceryImage: fullImage, groceryImageAlt: "Rice, flour, maize meal, cooking oil, vegetables, beef and chicken representing the Royal grocery allocation", cover: topCover, waiting: "6 months", description: "An open face casket with a headstone, expanded groceries, and R200 airtime and R200 data.", serviceItems, groceries: [...commonGroceries, "20 kg beef stew", "20 kg chicken drumsticks"], eyebrow: "Ceremonial distinction" },
-  { name: "Plan A", price: "R135", coffin: "Flat lid coffin", allowance: "Vegetables included", graveFee: "Included", headstoneImage: null, groceryImage: vegImage, groceryImageAlt: "Vegetables included with Plan A", cover: "Funeral service package", waiting: "6 months", description: "A flat lid coffin with the funeral-service inclusions listed below.", serviceItems: planServices("5 × 10"), groceries: ["Vegetables"], eyebrow: "Essential funeral support" },
-  { name: "Plan B", price: "R155", coffin: "Open face coffin", allowance: "Vegetables included", graveFee: "Included", headstoneImage: null, groceryImage: vegImage, groceryImageAlt: "Vegetables included with Plan B", cover: "Funeral service package", waiting: "6 months", description: "An open face coffin with the funeral-service inclusions listed below.", serviceItems: planServices("5 × 10"), groceries: ["Vegetables"], eyebrow: "Open face farewell" },
-  { name: "Plan C", price: "R165", coffin: "3 tier coffin", allowance: "Vegetables included", graveFee: "Included", headstoneImage: null, groceryImage: vegImage, groceryImageAlt: "Vegetables included with Plan C", cover: "Funeral service package", waiting: "6 months", description: "A 3 tier coffin with the funeral-service inclusions listed below.", serviceItems: planServices("5 × 10"), groceries: ["Vegetables"], eyebrow: "Three-tier comfort" },
-  { name: "Plan D", price: "R185", coffin: "Open face casket", allowance: "Vegetables included", graveFee: "Included", headstoneImage: null, groceryImage: vegImage, groceryImageAlt: "Vegetables included with Plan D", cover: "Funeral service package", waiting: "6 months", description: "An open face casket with the larger 7 × 10 tent and the funeral-service inclusions listed below.", serviceItems: planServices("7 × 10"), groceries: ["Vegetables"], eyebrow: "Open face casket" },
+  { name: "Premium", price: "R285", coffin: "Flat lid coffin", allowance: "R100 airtime and R100 data", graveFee: "Included", casketImage: "assets/img/plans/coffin-flat-lid.webp", casketAlt: "Flat lid coffin", headstoneImage: "assets/img/headstones/headstone-open-book.webp", cover: topCover, waiting: "6 months", description: "Core funeral support with a headstone, the listed groceries, and R100 airtime and R100 data.", serviceItems, groceries: [...commonGroceries, "10 kg beef stew", "10 kg chicken drumsticks"], eyebrow: "Refined protection" },
+  { name: "Presidential", price: "R325", coffin: "Open face coffin or 3 tier coffin", allowance: "R150 airtime and R150 data", graveFee: "Included", casketImage: "assets/img/plans/coffin-open-face.webp", casketAlt: "Open face coffin", headstoneImage: "assets/img/headstones/headstone-slanted-pillar.webp", cover: topCover, waiting: "6 months", description: "A distinguished package with a headstone, expanded groceries, and R150 airtime and R150 data.", serviceItems, groceries: [...commonGroceries, "15 kg beef stew", "15 kg chicken drumsticks"], eyebrow: "Distinguished assurance" },
+  { name: "Royal", price: "R355", coffin: "Open face casket", allowance: "R200 airtime and R200 data", graveFee: "Included", casketImage: "assets/img/plans/casket-open-face.webp", casketAlt: "Open face casket", headstoneImage: "assets/img/headstones/headstone-pillared.webp", cover: topCover, waiting: "6 months", description: "An open face casket with a headstone, expanded groceries, and R200 airtime and R200 data.", serviceItems, groceries: [...commonGroceries, "20 kg beef stew", "20 kg chicken drumsticks"], eyebrow: "Ceremonial distinction" },
+  { name: "Plan A", price: "R135", coffin: "Flat lid coffin", allowance: "Vegetables included", graveFee: "Included", casketImage: "assets/img/plans/coffin-flat-lid.webp", casketAlt: "Flat lid coffin", headstoneImage: null, cover: "Funeral service package", waiting: "6 months", description: "A flat lid coffin with the funeral-service inclusions listed below.", serviceItems: planServices("5 × 10"), groceries: ["Vegetables"], eyebrow: "Essential funeral support" },
+  { name: "Plan B", price: "R155", coffin: "Open face coffin", allowance: "Vegetables included", graveFee: "Included", casketImage: "assets/img/plans/coffin-open-face.webp", casketAlt: "Open face coffin", headstoneImage: null, cover: "Funeral service package", waiting: "6 months", description: "An open face coffin with the funeral-service inclusions listed below.", serviceItems: planServices("5 × 10"), groceries: ["Vegetables"], eyebrow: "Open face farewell" },
+  { name: "Plan C", price: "R165", coffin: "3 tier coffin", allowance: "Vegetables included", graveFee: "Included", casketImage: "assets/img/plans/coffin-3-tier.webp", casketAlt: "3 tier coffin", headstoneImage: null, cover: "Funeral service package", waiting: "6 months", description: "A 3 tier coffin with the funeral-service inclusions listed below.", serviceItems: planServices("5 × 10"), groceries: ["Vegetables"], eyebrow: "Three-tier comfort" },
+  { name: "Plan D", price: "R185", coffin: "Open face casket", allowance: "Vegetables included", graveFee: "Included", casketImage: "assets/img/plans/casket-open-face.webp", casketAlt: "Open face casket", headstoneImage: null, cover: "Funeral service package", waiting: "6 months", description: "An open face casket with the larger 7 × 10 tent and the funeral-service inclusions listed below.", serviceItems: planServices("7 × 10"), groceries: ["Vegetables"], eyebrow: "Open face casket" },
 ];
 
 const $ = (selector) => document.querySelector(selector);
@@ -185,20 +184,12 @@ function renderPlan(index) {
   $("#overlay-plan-note").textContent = plan.allowance;
   $("#overlay-plan-gravefee").textContent = plan.graveFee;
   const casketImage = $("#overlay-plan-casket");
-  casketImage.hidden = !plan.casketImage;
-  casketImage.closest(".plan-sheet-header").classList.toggle("has-visuals", Boolean(plan.groceryImage));
-  if (plan.casketImage) {
-    casketImage.src = plan.casketImage;
-    casketImage.alt = plan.casketAlt;
-  } else {
-    casketImage.removeAttribute("src");
-    casketImage.alt = "";
-  }
-  const groceryVisual = $("#overlay-plan-grocery-visual");
-  groceryVisual.src = plan.groceryImage;
-  groceryVisual.alt = plan.groceryImageAlt;
+  casketImage.src = plan.casketImage;
+  casketImage.alt = `${plan.casketAlt} included with ${plan.name}`;
   const headstoneVisual = $("#overlay-plan-headstone");
   headstoneVisual.hidden = !plan.headstoneImage;
+  casketImage.closest(".plan-sheet-header").classList.add("has-visuals");
+  casketImage.closest(".plan-sheet-visuals").classList.toggle("no-headstone", !plan.headstoneImage);
   if (plan.headstoneImage) {
     headstoneVisual.src = plan.headstoneImage;
     headstoneVisual.alt = `Headstone included with ${plan.name}`;
@@ -208,8 +199,6 @@ function renderPlan(index) {
   }
   $("#overlay-service-heading").textContent = plan.serviceItems.length ? "Included service items" : "Service items";
   $("#overlay-grocery-title").textContent = `Groceries included with ${plan.name}.`;
-  $("#overlay-grocery-image").src = plan.groceryImage;
-  $("#overlay-grocery-image").alt = plan.groceryImageAlt;
   $("#overlay-service-list").innerHTML = plan.serviceItems.length ? plan.serviceItems.map((item) => `<li>${item}</li>`).join("") : `<li>${plan.allowance}</li>`;
   $("#overlay-grocery-list").innerHTML = plan.groceries.map((item) => `<li>${item}</li>`).join("");
   $$(".package-card").forEach((card, cardIndex) => card.classList.toggle("active", cardIndex === index));

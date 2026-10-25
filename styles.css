@@ -401,6 +401,15 @@ details p { max-width: 45rem; margin: 0 3rem 1.5rem 0; color: var(--muted); font
 .package-visual-headstones .package-visual-slides img { object-fit: contain; padding: 1.25rem 1.25rem 5.5rem; background: none; filter: drop-shadow(0 10px 12px rgba(20,16,10,.22)); }
 .package-visual-casket .package-visual-slides img.is-active,
 .package-visual-headstones .package-visual-slides img.is-active { opacity: 1; }
-.plan-sheet-visuals .plan-sheet-headstone { background: #ebe6de; object-fit: contain; }
-.plan-sheet-visuals:has(.plan-sheet-headstone[hidden]) .plan-sheet-visual-grocery { grid-column: 1 / -1; }
+/* Package panel: plan coffin + headstone (top 3), no food photos */
+.plan-sheet-visuals { grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 1rem; }
+.plan-sheet-visuals .plan-sheet-casket { grid-column: auto; height: 11rem; max-height: 11rem; filter: drop-shadow(0 12px 14px rgba(0,0,0,.35)); }
+.plan-sheet-visuals .plan-sheet-headstone { height: 11rem; background: none; object-fit: contain; filter: drop-shadow(0 12px 14px rgba(0,0,0,.35)); }
+.plan-sheet-visuals.no-headstone .plan-sheet-casket { grid-column: 1 / -1; height: 12rem; max-height: 12rem; }
+.plan-sheet-grocery-content { grid-template-columns: 1fr; }
+@media (max-width: 760px) {
+  .plan-sheet-visuals .plan-sheet-casket, .plan-sheet-visuals .plan-sheet-headstone { height: 8rem; max-height: 8rem; }
+  .plan-sheet-visuals.no-headstone .plan-sheet-casket { height: 9rem; max-height: 9rem; }
+  .plan-sheet-grocery-content { grid-template-columns: 1fr; }
+}
 .site-footer small a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
