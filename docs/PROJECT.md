@@ -4,7 +4,7 @@
 
 ## Status
 - **Mode:** B (change request on live site) — "October package updates"
-- **Phase:** 4 Preview → waiting on G4 (David's written sign-off)
+- **Phase:** LIVE (25 Oct 2026) — follow-up edits pending David's answers
 - **Next action:** Qhawe sends David the preview link + sign-off sheet; Bobo confirms coffin/headstone per plan
 - **Waiting on:** David (sign-off, 6 open items below), Bobo (coffin + headstone per plan)
 - **Deferred by operator (25 Oct 2026):** 2FA on Netlify/GitHub, repo privacy, account ownership — "remove friction, prioritise web changes and getting it live"
@@ -29,12 +29,13 @@
 ## Gates
 | Gate | Status | Date | Approved by | What exactly was approved |
 |---|---|---|---|---|
-| G4 Content & pricing | ⬜ waiting | | | preview URL + commit SHA |
-| G5 Merge to production | ⬜ | | | PR # |
+| G4 Content & pricing | ⚠️ waived by operator | 2026-10-25 | Qhawe | Went live before David's written sign-off; open items 1–8 still to confirm (grave fee wording most urgent) |
+| G5 Merge to production | ✅ | 2026-10-25 | Qhawe ("go live") | PR #1, deploy-preview-1 |
 | G8a Search Console TXT | ⬜ | | | |
 | G8 Search & Business Profile | ⬜ | | | |
 
 ## Approval log (verbatim)
+- 2026-10-25 19:50 — G5 — Qhawe: "what's next the edits are good" then 19:52 "go live". G4 (David) not yet received; operator chose to launch and correct after David replies.
 - 2026-10-24 — change request — David (relayed by Qhawe): "Drinks - use those that was sent / Coffins - pictures will be added to drive / headstone - use what we been sent / Top 3 packages is 4 children and 4 adults = use you can add up to 8 members / say graveyard transport instead of 5 taxis on all packages / remove flowers add headstones … / full gas bottle 9kg add to gas stove / Plan A to D should be including vegetables only / Registration of the diseased and Removals should be included in packages / Grave side deco & refreshments should be included / Remove names from headstones"
 - 2026-10-25 — name — Qhawe: use "Kgotso BM Funerals Scheme". Refreshment photos: use the ones in the Kgotso Funeral Services Drive folder.
 
