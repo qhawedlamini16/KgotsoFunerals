@@ -45,7 +45,7 @@
 4. Coffin per plan matched to the brochure wording (25 Oct): flat lid = Premium/Plan A, open face coffin = Presidential/Plan B, 3 tier = Plan C, open face casket = Royal/Plan D. Presidential shows the open face option. Headstones on top 3 only (brochure); design per plan is a placeholder choice (Premium open-book, Presidential slanted pillar, Royal pillared) — confirm with Bobo.
 7. Brochure differs from the site: top 3 say "Grave Fee Excluded" (site says included on all 7); address "1997 Corner Themba Drive & Monageng Street, Kagiso 2" (site: Corner Themba Street); 3 more branches listed (Munsieville, Zenzele Randfontein, Bagale Village Tarlton); Grocery Plan R140 and custom plans not on site; reg no. 2023/989428/07 vs K2023989428 on site.
 5. Plans A–D cover ("Funeral service package") and waiting period (6 months) unchanged — confirm.
-6. Facebook page (id 61594921948589) and TikTok (@kgotso.bm.funeral) are the official links.
+6. Facebook https://web.facebook.com/profile.php?id=61595772892689 and TikTok @kgotso.bm.funeral confirmed by Qhawe 25 Oct 2026. Instagram link still needed.
 
 ## Change log
 - 2026-10-25 — panels: plan coffin photos (supplied by Qhawe) + headstones on top 3; food photos removed from package panels; grocery lists kept as text.
