@@ -15,7 +15,7 @@
 | Client contact (approver) | David (via Qhawe); owner Bobo |
 | Agency operator | Qhawe Dlamini |
 | Domain | kgotsobmfunerals.com (primary, apex) |
-| Registrar / account owner | TBC |
+| Registrar / account owner | Namecheap (IANA 1068) — registered 2026-09-30, expires 2027-09-30; account holder TBC |
 | Canonical URL | https://kgotsobmfunerals.com/ |
 | GitHub repo | qhawedlamini16/KgotsoFunerals (public, personal account) |
 | Netlify project / site ID | kgotsobmfunerals / 11ea9073-ee60-411a-a6e8-46c47ba15f5b |
@@ -57,6 +57,9 @@
 | Services section | funeral services in Kagiso | funeral parlour Kagiso, graveside decor, hearse |
 | Branches (pending) | funeral services Munsieville / Randfontein / Tarlton | only with confirmed staffed branches |
 Note: "Kgatso" is the NFMW (National Fund for Municipal Workers) voluntary burial scheme — national authority; compete on "Kgotso BM" + Kagiso + Maps, never mention Kgatso.
+
+## Incidents
+- 2026-10-26 — kgotsobmfunerals.com unreachable. Cause: Namecheap suspended the domain for failed registrant (WHOIS/ICANN) contact verification; nameservers set to verify-contact-details / failed-whois-verification.namecheap.com, A record → 198.54.117.242 (Namecheap holding). Registry "last changed" 2026-10-15 → domain has been down since ~15 Oct, before the 25 Oct launch; site itself healthy on kgotsobmfunerals.netlify.app. Fix: registrant clicks Namecheap verification email (or updates registrant email in Namecheap → Contacts, which resends it); Namecheap restores previous nameservers. Follow-up: record registrant email, turn on auto-renew, confirm Netlify DNS records once restored.
 
 ## Change log
 - 2026-10-25 — package summary block removed at operator request (too cluttered); package details live in the panels only.
