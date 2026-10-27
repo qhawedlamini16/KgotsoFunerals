@@ -60,6 +60,7 @@ Note: "Kgatso" is the NFMW (National Fund for Municipal Workers) voluntary buria
 
 ## Incidents
 - 2026-10-26 — kgotsobmfunerals.com unreachable. Cause: Namecheap suspended the domain for failed registrant (WHOIS/ICANN) contact verification; nameservers set to verify-contact-details / failed-whois-verification.namecheap.com, A record → 198.54.117.242 (Namecheap holding). Registry "last changed" 2026-10-15 → domain has been down since ~15 Oct, before the 25 Oct launch; site itself healthy on kgotsobmfunerals.netlify.app. Fix: registrant clicks Namecheap verification email (or updates registrant email in Namecheap → Contacts, which resends it); Namecheap restores previous nameservers. Follow-up: record registrant email, turn on auto-renew, confirm Netlify DNS records once restored.
+  - RESOLVED 2026-10-27 ~11:05: registrant contact (Namecheap account kgotsoBMfunerals, owner Bongani) updated and verified by Qhawe; registry updated 09:03 UTC; nameservers back to Netlify DNS (dns1–4.p03.nsone.net). Checked 11:10: https://kgotsobmfunerals.com loads new site over HTTPS, www redirects to apex, /README.md → 404 page, favicon.ico and sitemap.xml served. Auto-renew: TBC.
 
 ## Change log
 - 2026-10-25 — package summary block removed at operator request (too cluttered); package details live in the panels only.
