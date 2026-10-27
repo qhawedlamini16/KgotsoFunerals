@@ -24,7 +24,7 @@
 | Last production deploy before this change | 6abcd72d6ec1c79a619bf95d, 30 Sep 2026, commit 1273816 |
 | Official NAP | Name: **Kgotso BM Funerals Scheme** (operator, 25 Oct 2026) · Address: 1997 Corner Themba Street, Kagiso 2 · Phone display: 010 109 6723 · link: +27101096723 · WhatsApp 071 985 4522, 061 533 6947 |
 | Hours | Mon–Fri 08:00–16:00, Sat 07:30–13:00, Sun closed |
-| Search Console | not set up |
+| Search Console | Domain property kgotsobmfunerals.com — verified 27 Oct 2026 via DNS TXT (keep that record forever). Google account used: TBC; agency user: TBC |
 | Google Business Profile | none found |
 
 ## Gates
@@ -32,7 +32,7 @@
 |---|---|---|---|---|
 | G4 Content & pricing | ⚠️ waived by operator | 2026-10-25 | Qhawe | Went live before David's written sign-off; open items 1–8 still to confirm (grave fee wording most urgent) |
 | G5 Merge to production | ✅ | 2026-10-25 | Qhawe ("go live") | PR #1, deploy-preview-1 |
-| G8a Search Console TXT | ⬜ | | | |
+| G8a Search Console TXT | ✅ | 2026-10-27 | Qhawe (added TXT in Netlify DNS himself) | Domain property kgotsobmfunerals.com, TXT google-site-verification=uGGw…jClQ confirmed on Google DNS 11:24 |
 | G8 Search & Business Profile | ⬜ | | | |
 
 ## Approval log (verbatim)
@@ -70,5 +70,7 @@ Note: "Kgatso" is the NFMW (National Fund for Municipal Workers) voluntary buria
 - 2026-10-25 — branch change/david-oct-updates: package changes, new name, real coffin/headstone/refreshment photos, flowers removed, images 69 MB → 4 MB, favicons, robots/sitemap/canonical/schema, _headers, _redirects (internal files 404), 404 page, privacy notice, old Manus recovered copy removed from published files.
 
 ## Diary
+- 2026-11-03: Search Console 7-day check (Pages/indexing, sitemap status, brand search).
+- 2026-11-24: Search Console 4-week check (first query data).
 - After go-live: Search Console verify + sitemap; 7-day and 4-week checks.
 - Business Profile: owner to claim/verify (not started).
